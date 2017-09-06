@@ -1,0 +1,138 @@
+<!DOCTYPE html>  
+<!--[if lt IE 7]> 
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> 
+    <![endif]--> 
+    <!--[if IE 7]> 
+    <html lang="en" class="no-js lt-ie9 lt-ie8"> 
+        <![endif]--> 
+        <!--[if IE 8]> 
+        <html lang="en" class="no-js lt-ie9"> 
+            <![endif]--> 
+            <!--[if gt IE 8]> 
+           <!--> 
+<html lang="ru" class="no-js"> 
+                <!--<![endif]--> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Document</title> 
+  <meta name="description" content="My template"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="icon" type="image/x-icon" href="./favicon.ico"> 
+  <meta name="robots" content="index, follow"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+  <meta name="author" content=""> 
+  <meta name="copyright" content=""> 
+  <meta name="keywords" content=""> 
+  <link rel="stylesheet" href="./css/style.css"> 
+</head> 
+<body> 
+
+
+
+<div class="container">
+  <h1>Фильтры CSS3</h1>
+  <div class="flex">
+    <div class="function blur">
+      <h2>blur()</h2>
+      <h4>Синтаксис</h4>
+      <p>В качестве значения указывается радиус размытия, он пишется в любых доступных единицах размера CSS (к примеру: 5px). Чем больше значение, тем сильнее будет размыто изображение.
+
+Отрицательное значение не допускается. Пустое значение воспринимается как 0px.</p>
+      <code>filter: blur(5px);</code>
+      <img src="images/1.jpg" alt="">
+    </div>
+    <div class="function brightness">
+      <h2>brightness()</h2>
+      <h4>Синтаксис</h4>
+      <p>Значение 100% или 1 оставляет изображение исходным. Любые значения меньше 100% (или меньше 1) понижают яркость изображения. Таким образом, 0 даёт полностью чёрную картинку. Значения больше 100% (или больше 1) повышают яркость изображения.
+
+Отрицательное значение не допускается. Пустое значение воспринимается как 1.</p>
+      <code>filter: brightness(120%);</code>
+      <img src="images/2.jpg" alt="">
+    </div>
+    <div class="function contrast">
+    <h2>contrast()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 100% или 1 оставляет изображение исходным. Любые значения меньше 100% (или меньше 1) понижают контрастность изображения. При этом 0 даёт однотонную серую картинку. Значения больше 100% (или больше 1) повышают контрастность изображения.
+
+Отрицательное значение не допускается. Пустое значение воспринимается как 1.</p>
+    <code>filter: contrast(1.5);</code>
+    <img src="images/3.jpg" alt="">
+  </div>
+  <div class="function drop-shadow">
+    <h2>drop-shadow()</h2>
+    <h4>Синтаксис</h4>
+    <p><сдвиг по x>
+Смещение тени по горизонтали относительно картинки. Положительное значение этого параметра задаёт сдвиг тени вправо, отрицательное — влево. Обязательный параметр.
+<сдвиг по y>
+Смещение тени по вертикали относительно картинки. Положительное значение задаёт сдвиг тени вниз, отрицательное — вверх. Обязательный параметр.
+<размытие>
+Задаёт радиус размытия тени. Чем больше это значение, тем сильнее тень сглаживается, становится шире и светлее. Если этот параметр не задан, по умолчанию устанавливается равным 0, тень при этом будет чёткой, а не размытой.
+<цвет>
+Цвет тени в любом доступном CSS формате, по умолчанию тень чёрная. Необязательный параметр.</p>
+    <code>filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));</code>
+    <img src="images/4.jpg" alt="">
+  </div>
+  <div class="function grayscale">
+    <h2>grayscale()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 100% или 1 превращает изображение в чёрно-белое. Значение 0 оставляет изображение исходно цветным. Значения меньше 100% (или меньше 1) линейно меняют цветность картинки.
+
+Отрицательное значение не допускается. Пустое значение воспринимается как 0.</p>
+    <code>filter: grayscale(100%);</code>
+    <img src="images/5.jpg" alt="">
+  </div>
+  <div class="function hue-rotate">
+    <h2>hue-rotate()</h2>
+    <h4>Синтаксис</h4>
+    <p>В качестве значения указывается угол (к примеру: 45deg), который задаёт поворот оттенка на цветовом круге. 0 или 360 градусов оставляет изображение неизменным. Любые значения больше или меньше нуля производят сдвиг цвета в изображении.
+
+Пустое значение воспринимается как 0deg.</p>
+    <code>filter: hue-rotate(30deg);</code>
+    <img src="images/6.jpg" alt="">
+  </div>
+  <div class="function invert">
+    <h2>invert()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 0 оставляет изображение исходным. Значение 100% или 1 полностью инвертирует цвета картинки. Значения от 0% до 100% или от 0 до 1 инвертируют цвета частично.
+
+    Отрицательное значение не допускается. Пустое значение воспринимается как 0.</p>
+    <code>filter: invert(1);</code>
+    <img src="images/7.jpg" alt="">
+  </div>
+  <div class="function opacity">
+    <h2>opacity()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 100% или 1 оставляет изображение исходным. Значение 0% или 0 делает изображение полностью прозрачным. Любые значения от 0% до 100% или от 0 до 1 задают степень прозрачности картинки.</p>
+    <code>filter: opacity(0.5);</code>
+    <img src="images/8.jpg" alt="">
+  </div>
+  
+  <div class="function saturate">
+    <h2>saturate()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 0% или 0 полностью убирает насыщенность цветов в изображении, превращая его в чёрно-белое. Значение 100% или 1 оставляет изображение неизменным. Любые значения больше 100% или больше 1 делают цвета в изображении более насыщенными.</p>
+    <code>filter: saturate(1.5);</code>
+    <img src="images/9.jpg" alt="">
+  </div>
+  
+  </div>
+  <div class="function sepia">
+    <h2>sepia()</h2>
+    <h4>Синтаксис</h4>
+    <p>Значение 0% или 0 оставляет изображение неизменным. Значение 100% или 1 полностью превращает изображение в сепию. Любые значения от 0% до 100% или от 0 до 1 линейно применяют эффект.</p>
+    <code>filter: sepia(80%);</code>
+    <img src="images/10.jpg" alt="">
+  </div>
+</div>
+<!-- scripts --> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+  crossorigin="anonymous"></script> 		
+    <script> 
+        $('document').ready(function(){ 
+}); 
+    </script> 
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body> 
+</html> 
